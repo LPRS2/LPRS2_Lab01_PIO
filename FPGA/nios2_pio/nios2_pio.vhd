@@ -14,7 +14,6 @@ entity nios2_pio is
 		-- On MAX1000.
 		-- System signals.
 		i_clk                      :  in std_logic; -- 12MHz clock.
-		in_rst                     :  in std_logic; -- Active low reset.
 		
 		
 		-- LEDs.
