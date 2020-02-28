@@ -1,0 +1,15 @@
+.metadata/
+RemoteSystemsTempFiles/
+obj/
+*.a
+*.elf
+*.map
+*.objdump
+*_bsp/HAL/
+*_bsp/drivers/
+*_bsp/*.h
+*_bsp/*.c
+*_bsp/*.x
+*_bsp/*.html
+*_bsp/*.mk
+*_bsp/*.gdb
