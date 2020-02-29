@@ -14,4 +14,4 @@ obj/
 *_bsp/*.gdb
 *_bsp/*.mk
 *_bsp/Makefile
-*_bsp/settings.bsp
+*_bsp/.force_relink

@@ -14,6 +14,7 @@ entity nios2_pio is
 		-- On MAX1000.
 		-- System signals.
 		i_clk                      :  in std_logic; -- 12MHz clock.
+		in_rst                     :  in std_logic;
 		
 		
 		-- LEDs.
@@ -29,21 +30,27 @@ end entity;
 
 architecture nios2_pio_arch of nios2_pio is
 	
+	signal rst : std_logic;
+	
 	component nios2_pio_qsys is
 		port (
 			i_clk_clk    : in  std_logic                    := 'X';             -- clk
+			i_sw_export  : in  std_logic_vector(7 downto 0) := (others => 'X'); -- export
 			o_led_export : out std_logic_vector(7 downto 0);                    -- export
-			i_sw_export  : in  std_logic_vector(7 downto 0) := (others => 'X')  -- export
+			i_rst_reset  : in  std_logic                    := 'X'              -- reset
 		);
 	end component nios2_pio_qsys;
 	
 begin
 	
+	rst <= not in_rst;
+	
 	u0 : component nios2_pio_qsys
 	port map (
-		i_clk_clk    => i_clk,    -- i_clk.clk
-		o_led_export => o_led, -- o_led.export
-		i_sw_export  => i_sw   --  i_sw.export
+		i_clk_clk    => i_clk,
+		i_sw_export  => i_sw,
+		o_led_export => o_led,
+		i_rst_reset  => rst
 	);
 
 end architecture;
