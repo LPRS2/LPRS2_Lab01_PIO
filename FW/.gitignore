@@ -11,5 +11,6 @@ obj/
 *_bsp/*.c
 *_bsp/*.x
 *_bsp/*.html
-*_bsp/*.mk
 *_bsp/*.gdb
+*_bsp/*.mk
+*_bsp/Makefile
