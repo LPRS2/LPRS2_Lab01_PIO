@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Feb 29, 2020 12:19:18 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1582975158460</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 3, 2020 11:59:32 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1583233172837</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/micuri/STEM/Computer_Engineering/LPRS2_Labs/LPRS2_MAX1000_Lab_01_PIO/FW/nios2_pio_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../FPGA/nios2_pio/nios2_pio_qsys.sopcinfo</SopcDesignFile>
@@ -881,7 +881,7 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sysid_1337</slaveDescriptor>
+                <slaveDescriptor>sysid</slaveDescriptor>
                 <addressRange>0x00008000 - 0x00008007</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
