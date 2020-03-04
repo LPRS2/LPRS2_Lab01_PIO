@@ -6,6 +6,7 @@ obj/
 *.elf
 *.map
 *.objdump
+.force*
 *_bsp/HAL/
 *_bsp/drivers/
 *_bsp/*.h
@@ -15,4 +16,3 @@ obj/
 *_bsp/*.gdb
 *_bsp/*.mk
 *_bsp/Makefile
-*_bsp/.force_relink
