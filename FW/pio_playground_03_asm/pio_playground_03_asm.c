@@ -3,10 +3,11 @@
 #include <stdint.h>
 #include "system.h"
 
-#define sw ((volatile uint8_t*)0x10)
-#define led ((volatile uint8_t*)LED_PIO_BASE)
 
 int main() {
+
+	volatile uint8_t* sw = (volatile uint8_t*)SW_PIO_BASE;
+	volatile uint8_t* led = (volatile uint8_t*)LED_PIO_BASE;
 
 	while(1) { // Infinite loop.
 		uint8_t x;

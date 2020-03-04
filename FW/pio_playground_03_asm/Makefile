@@ -142,7 +142,7 @@ ACDS_VERSION := 18.0
 ELF := pio_playground_03_asm.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := pio_playground.c
+C_SRCS := pio_playground_03_asm.c
 CXX_SRCS :=
 ASM_SRCS :=
 
