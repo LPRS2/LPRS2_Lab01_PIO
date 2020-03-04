@@ -1,7 +1,6 @@
 
 
 #include <stdint.h>
-#include "io.h"
 #include "system.h"
 
 volatile uint8_t* sw = (volatile uint8_t*)SW_PIO_BASE;
