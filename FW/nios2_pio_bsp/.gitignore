@@ -1,0 +1,13 @@
+# BSP stuff.
+obj/
+*.a
+.force*
+HAL/
+drivers/
+*.h
+*.c
+*.x
+*.html
+*.gdb
+*.mk
+Makefile
